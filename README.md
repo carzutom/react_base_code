@@ -61,6 +61,17 @@ It generates a folder called `dist` with all the compiled files
 │  │  ├─ helpers
 │  │  │  ├─ Helper.js
 │  │  │  ├─ ...
+│  │  ├─ locale
+│  │  │  ├─ de
+│  │  │  │  ├─ home.js
+│  │  │  │  ├─ index.js
+│  │  │  │  ├─ ...
+│  │  │  ├─ en
+│  │  │  │  ├─ home.js
+│  │  │  │  ├─ index.js
+│  │  │  │  ├─ ...
+│  │  │  │  
+│  │  │  └─ index.js
 │  │  ├─ routes
 │  │  │  ├─ home
 │  │  │  │  ├─ index.js
@@ -82,6 +93,7 @@ It generates a folder called `dist` with all the compiled files
 * ***src/app/components***. You'll most place your components here. This is the view's folder.
 * ***src/app/config***. Your global app's configuration goes here. (Ex. api's configuration).
 * ***src/app/helpers***. Here goes global functions that you access in entire project. (Ex. api's functions).
+* ***src/app/locale***. Here define the languages that your app will support.
 * ***src/app/routes***. Define all routes of your project here.
 * ***src/app/store***. If you use redux this is the file where you configure the main store for your app.
 * ***src/assets***. Folder where global resources are placed, like theme, bootstrap styles, images, fonts, etc
