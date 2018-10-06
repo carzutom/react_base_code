@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import './assets/css/Layout.css'
+import './assets/css/layout.less'
 
 class Layout extends Component {
   render() {

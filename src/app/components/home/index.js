@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Translate} from 'react-redux-i18n'
 
 import logo from './assets/img/logo.svg'
-import './assets/css/Home.css'
+import './assets/css/home.less'
 
 import LanguageSelector from '../i18n'
 

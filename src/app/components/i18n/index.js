@@ -1,9 +1,12 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux"
 
-import './assets/css/Selector.css'
+import './assets/css/selector.less'
 
 import {setLanguage} from "./actions"
+
+import usa from './assets/img/usa.svg'
+import germany from './assets/img/germany.svg'
 
 class LanguageSelector extends Component {
   constructor(props) {
@@ -16,7 +19,7 @@ class LanguageSelector extends Component {
         {
           this.props.langs.map((lang) =>
             <a key={lang.code} href="#" onClick={this.props._selectLanguage.bind(this,lang.code)}>
-              <li><img src={lang.icon}/>{lang.label}</li>
+              <li><img className="image" src={lang.code == "en" && usa || lang.code == "de" && germany}/>{lang.label}</li>
             </a>
           )
         }
