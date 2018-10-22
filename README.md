@@ -31,7 +31,7 @@ npm install
 ### Development
 
 ```bash
-npm run dev
+npm run start
 ```
 Then open your browser in [http://localhost:3000](http://localhost:3000/)
 
@@ -78,17 +78,17 @@ It generates a folder called `dist` with all the compiled files
 │  │  │  ├─ ...
 │  │  ├─ store
 │  │  │  └─ configureStore.js
-│  │  ├─ app.js
-│  │  └─ main.js
+│  │  │
+│  │  └─ app.js
 │  │
-│  ├─ assets
-│  ├─ 404.html
 │  └─ index.html
 │   
 ├─ LICENSE
 ├─ package.json
 ├─ README.md
-└─ webpack.config.js
+├─ webpack.base.config.js
+├─ webpack.opt.config.js
+└─ webpack.prod.config.js
 ```
 * ***src/app/components***. You'll most place your components here. This is the view's folder.
 * ***src/app/config***. Your global app's configuration goes here. (Ex. api's configuration).

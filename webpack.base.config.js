@@ -12,7 +12,7 @@ const appRoot = path.resolve(srcRoot, 'app');
 module.exports = {
   context: path.resolve(__dirname),
   entry: {
-    main: './src/app/main.js'
+    main: './src/app/app.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -35,11 +35,18 @@ module.exports = {
         test: /\.less/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'less-loader']
+          use: [
+            {loader: 'css-loader'},
+            {
+              loader: 'less-loader',
+              options: {
+                javascriptEnabled: true
+              }
+            }
+          ]
         })
       },
-      {test: /\.json$/, loader: "json-loader"},
-      {test: /\.(jpe?g|png|gif|svg)$/, loader: 'file-loader'},
+      {test: /\.(jpe?g|png|gif|svg|woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader'},
     ]
   },
   resolve: {
