@@ -18,7 +18,7 @@
   <h1>React Base Code</h1>
 </div>
 
-> This is a repo with base code for react projects, with basic configuration. Use Webpack 2.x, bootstrap 4, jquery 3.x, react 15.x, react-router 3.x, redux 3.x
+> This is a repo with base code for react projects, with basic configuration. Use Webpack 4.x, bootstrap 4, jquery 3.x, react 16.x, react-router 3.x, redux 4.x
 
 ### Install
 
@@ -31,7 +31,7 @@ npm install
 ### Development
 
 ```bash
-npm run start
+npm start
 ```
 Then open your browser in [http://localhost:3000](http://localhost:3000/)
 
