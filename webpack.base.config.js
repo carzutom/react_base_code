@@ -11,6 +11,7 @@ const appRoot = path.resolve(srcRoot, 'app');
 
 module.exports = {
   context: path.resolve(__dirname),
+  cache: true,
   entry: {
     main: './src/app/app.js'
   },
@@ -82,6 +83,6 @@ module.exports = {
     ]),
     new ExtractTextPlugin(
       'styles.css', {allChunks: true}
-    )
+    ),
   ]
 };

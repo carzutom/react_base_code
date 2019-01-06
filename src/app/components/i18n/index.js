@@ -18,9 +18,12 @@ class LanguageSelector extends Component {
       <ul className="languagepicker">
         {
           this.props.langs.map((lang) =>
-            <a key={lang.code} href="#" onClick={this.props._selectLanguage.bind(this,lang.code)}>
-              <li><img className="image" src={lang.code == "en" && usa || lang.code == "de" && germany}/>{lang.label}</li>
-            </a>
+            <li>
+              <a key={lang.code} href="#" onClick={this.props._selectLanguage.bind(this,lang.code)}>
+                <img className="image" src={lang.code == "en" && usa || lang.code == "de" && germany} alt={lang.code} />
+                {lang.label}
+              </a>
+            </li>
           )
         }
       </ul>
